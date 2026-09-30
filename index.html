@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Supriya Thapa | Ethical Hacking & Cyber Security</title>
+  <meta name="description" content="Portfolio of Supriya Thapa, ethical hacking and cyber security undergraduate in Kathmandu, Nepal." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+  <script>
+    // apply saved theme before paint (no flash)
+    try {
+      const t = localStorage.getItem("theme") ||
+        (matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light");
+      document.documentElement.dataset.theme = t;
+    } catch (e) {}
+  </script>
+</head>
+<body>
+
+  <a class="skip" href="#main">Skip to content</a>
+
+  <header class="nav">
+    <a class="nav__logo" href="#top" aria-label="Home">ST</a>
+    <nav aria-label="Main">
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#experience">Experience</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+      <button class="theme" id="themeBtn" type="button" aria-label="Switch color theme">
+        <span class="theme__sun" aria-hidden="true">☀</span>
+        <span class="theme__moon" aria-hidden="true">☾</span>
+      </button>
+    </nav>
+  </header>
+
+  <main id="main">
+
+    <!-- HERO -->
+    <section class="hero" id="top">
+      <div class="hero__grid" aria-hidden="true"></div>
+      <div class="wrap hero__inner">
+        <div class="hero__text">
+          <p class="hero__role">Ethical Hacking &amp; Cyber Security undergraduate</p>
+          <h1>Supriya<br />Thapa</h1>
+          <p class="hero__lead">
+            I investigate cyber incidents and dig through digital evidence.
+            Currently studying at Softwarica College of IT &amp; E-Commerce, Kathmandu.
+          </p>
+          <div class="hero__cta">
+            <a class="btn btn--light" href="#projects">See my projects</a>
+            <a class="btn btn--ghost" href="#contact">Get in touch</a>
+          </div>
+        </div>
+
+        <aside class="dump" aria-label="Decorative hex dump of my name">
+          <div class="dump__bar">
+            <span class="dots" aria-hidden="true"><i></i><i></i><i></i></span>
+            <span>evidence_001.bin</span>
+            <span id="dumpSize">0 bytes</span>
+          </div>
+          <pre id="dumpBody" class="dump__body" aria-hidden="true"></pre>
+          <p class="dump__hint">Hover a byte to read it.</p>
+        </aside>
+      </div>
+    </section>
+
+    <!-- STATS -->
+    <section class="stats wrap" aria-label="Quick facts">
+      <div><strong>2</strong><span>CTF events</span></div>
+      <div><strong>8</strong><span>security tools</span></div>
+      <div><strong>5</strong><span>certifications</span></div>
+      <div><strong>2</strong><span>projects</span></div>
+    </section>
+
+    <!-- TOOLS MARQUEE -->
+    <div class="marquee" aria-hidden="true">
+      <div class="marquee__track">
+        <span>Wireshark</span><span>Nmap</span><span>Burp Suite</span><span>Metasploit</span>
+        <span>FTK Imager</span><span>Autopsy</span><span>Volatility</span><span>Kali Linux</span>
+        <span>Wireshark</span><span>Nmap</span><span>Burp Suite</span><span>Metasploit</span>
+        <span>FTK Imager</span><span>Autopsy</span><span>Volatility</span><span>Kali Linux</span>
+      </div>
+    </div>
+
+    <!-- ABOUT -->
+    <section class="band" id="about">
+      <div class="wrap">
+        <h2>About</h2>
+        <div class="about">
+          <p class="about__main">
+            I'm a motivated ethical hacking and cyber security undergraduate with a strong
+            interest in digital forensics. Through university projects, TryHackMe and
+            Capture the Flag competitions, I've been learning how to investigate cyber
+            incidents, analyze digital evidence, and solve technical problems.
+          </p>
+          <dl class="facts">
+            <div><dt>Degree</dt><dd>BSc (Hons) Ethical Hacking &amp; Cyber Security, 2024 to present</dd></div>
+            <div><dt>College</dt><dd>Softwarica College of IT &amp; E-Commerce, with Coventry University</dd></div>
+            <div><dt>Based in</dt><dd>Kathmandu, Nepal</dd></div>
+          </dl>
+        </div>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section class="band band--tint" id="skills">
+      <div class="wrap">
+        <h2>Skills &amp; tools</h2>
+        <div class="skills">
+          <div class="skills__group">
+            <h3>Security</h3>
+            <ul class="chips">
+              <li>Digital Forensics</li>
+              <li>Network Security</li>
+              <li>Web Security</li>
+              <li>Linux</li>
+            </ul>
+          </div>
+          <div class="skills__group">
+            <h3>Programming</h3>
+            <ul class="chips">
+              <li>Python (basic)</li>
+              <li>HTML</li>
+              <li>CSS</li>
+            </ul>
+          </div>
+          <div class="skills__group skills__group--wide">
+            <h3>Tools</h3>
+            <ul class="tools">
+              <li>Wireshark</li>
+              <li>Nmap</li>
+              <li>Burp Suite</li>
+              <li>Metasploit</li>
+              <li>FTK Imager</li>
+              <li>Autopsy</li>
+              <li>Volatility</li>
+              <li>Kali Linux</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- EXPERIENCE -->
+    <section class="band" id="experience">
+      <div class="wrap">
+        <h2>Experience</h2>
+        <ol class="timeline">
+          <li>
+            <span class="timeline__date">July 2025</span>
+            <h3>HackFest 2.0: Defend the Future</h3>
+            <p class="timeline__org">Softwarica College</p>
+            <ul>
+              <li>Took part in a university Capture the Flag competition.</li>
+              <li>Worked with teammates to solve cybersecurity challenges.</li>
+            </ul>
+          </li>
+          <li>
+            <span class="timeline__date">January 2025</span>
+            <h3>HackFest 2025: Capture the Flag</h3>
+            <p class="timeline__org">Softwarica College</p>
+            <ul>
+              <li>Competed in a university cybersecurity event.</li>
+              <li>Applied networking and cybersecurity knowledge to solve practical challenges.</li>
+            </ul>
+          </li>
+          <li>
+            <span class="timeline__date">Xavier International Model United Nations 6.0</span>
+            <h3>Delegate, Ireland (UNHRC)</h3>
+            <p class="timeline__org">Xavier International College</p>
+            <ul>
+              <li>Represented Ireland in the UNHRC committee.</li>
+              <li>Built public speaking, teamwork, and research skills.</li>
+            </ul>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section class="band band--tint" id="projects">
+      <div class="wrap">
+        <h2>Projects</h2>
+        <div class="projects">
+          <article class="project">
+            <div class="project__top" aria-hidden="true"><span>&lt;/&gt;</span></div>
+            <div class="project__body">
+              <h3>Secure Login Website</h3>
+              <!-- TODO: replace with a real description of what you built -->
+              <p>A login system built with security in mind. Add what you built it with and which protections you added (hashing, validation, sessions).</p>
+              <ul class="chips chips--small">
+                <li>Web Security</li>
+                <li>HTML</li>
+                <li>CSS</li>
+              </ul>
+              <a class="project__link" href="#" aria-label="View Secure Login Website on GitHub">View on GitHub</a>
+            </div>
+          </article>
+
+          <article class="project">
+            <div class="project__top project__top--alt" aria-hidden="true"><span>⌖</span></div>
+            <div class="project__body">
+              <h3>TrailPing: Hiker Safety Application</h3>
+              <!-- TODO: replace with a real description of what you built -->
+              <p>An application designed to keep hikers safe on the trail. Add the main features and the tech stack you used.</p>
+              <ul class="chips chips--small">
+                <li>Safety</li>
+                <li>Application</li>
+              </ul>
+              <a class="project__link" href="#" aria-label="View TrailPing on GitHub">View on GitHub</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- CERTIFICATIONS + EDUCATION -->
+    <section class="band" id="credentials">
+      <div class="wrap two-col">
+        <div>
+          <h2>Certifications</h2>
+          <ul class="list">
+            <li>TryHackMe: Pre Security Learning Path</li>
+            <li>HackFest 2025: CTF</li>
+            <li>HackFest 2.0: Defend the Future</li>
+            <li>Xavier International Model United Nations 6.0</li>
+            <li>Nepal Academy of Music &amp; Drama</li>
+          </ul>
+        </div>
+        <div>
+          <h2>Education</h2>
+          <ul class="list">
+            <li>
+              <strong>Softwarica College of IT &amp; E-Commerce</strong><br />
+              BSc (Hons) Ethical Hacking &amp; Cyber Security, 2024 to present
+            </li>
+            <li>
+              <strong>Xavier International College</strong><br />
+              +2 (Management), 2022 to 2024
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="contact" id="contact">
+      <div class="wrap">
+        <h2>Contact</h2>
+        <p class="contact__lead">Open to internships, CTF teams, and security projects. Send me a message.</p>
+
+        <div class="contact__grid">
+          <ul class="contact__links">
+            <li><span>Email</span><a href="mailto:supriyathapa115@gmail.com">supriyathapa115@gmail.com</a></li>
+            <li><span>Phone</span><a href="tel:+9779824745848">+977-9824745848</a></li>
+            <li><span>Location</span>Kathmandu, Nepal</li>
+            <!-- Add these when you have them:
+            <li><span>GitHub</span><a href="https://github.com/YOUR-USERNAME">github.com/YOUR-USERNAME</a></li>
+            <li><span>LinkedIn</span><a href="https://linkedin.com/in/YOUR-USERNAME">linkedin.com/in/YOUR-USERNAME</a></li>
+            -->
+          </ul>
+
+          <form class="form" id="contactForm">
+            <label>Your name
+              <input type="text" name="name" required autocomplete="name" />
+            </label>
+            <label>Your email
+              <input type="email" name="email" required autocomplete="email" />
+            </label>
+            <label>Message
+              <textarea name="message" rows="4" required></textarea>
+            </label>
+            <button class="btn btn--solid" type="submit">Send message</button>
+            <p class="form__note" id="formNote" role="status"></p>
+          </form>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <p>&copy; <span id="year"></span> Supriya Thapa</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
